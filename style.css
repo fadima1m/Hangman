@@ -1,0 +1,114 @@
+body {
+    background: #FFC0CB;
+  }
+  
+  main {
+    max-width: 610px;
+    margin: auto;
+  }
+  
+  h1, h5 {
+    text-align: center;
+    color: white;
+  }
+  
+  .win {
+    color: black;
+    background-color: green;
+  }
+  
+  .loss {
+    color: black;
+    background-color: red;
+  }
+  
+  #word {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 24pt;
+    color: #FF1694;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+  }
+  
+  #guesses {
+    text-align: center;
+    font-size: 16pt;
+    color: #F79AC0;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+  }
+  
+  .guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid #FD5DA8;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+      #guesses {
+      text-align: center;
+      font-size: 24pt;
+      color: #FD5DA8;
+      font-weight: bold;
+      font-family: "Courier New", Courier, monospace
+    }
+  
+    .guess {
+      padding: 30px;
+      display: inline-block;
+      border: 2px solid rgb(black);
+      border-radius: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  #guessBox {
+      height: 60px;
+      border-radius: 10px;
+      padding-top: 5px;
+      font-size: 18pt;
+      width: 200px;
+      padding-left: 10px;
+  }
+  
+  /* Buttons */
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: blue;
+    background-color: rgb(#FFC0CB);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: rgb(#9E4244)}
+  
+  .button:active {
+    background-color: rgb(#F79AC0);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .blink-bg{
+		color: #fff;
+		padding: 10px;
+		border-radius: 5px;
+		animation: blinkingBackground 2s infinite;
+	}
+	@keyframes blinkingBackground{
+		0%		{ background-color: #10c018;}
+		25%		{ background-color: #1056c0;}
+		50%		{ background-color: #ef0a1a;}
+		75%		{ background-color: #254878;}
+		100%	        { background-color: #04a1d5;}
